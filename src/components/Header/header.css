@@ -1,9 +1,24 @@
 
+/* 
+Added styles for a visually enhanced header with a background color and white text. 
+Increased the spacing between navigation items for better layout. 
+Introduced a smooth, animated underline effect for navigation links using the ::after pseudo-element, 
+which expands on hover. Also changed the hover color of the navigation links for improved interaction feedback.
+--rainier
+*/
+
 
 .header{
     width: 100%;
     height: 80px;
     line-height: 80px;
+    background-color: #A63E4A;
+    color: #fff;
+}
+
+.ri-copilot-fill{
+    color: #fff;
+    padding: 0 1rem;
 }
 
 .nav_list{
@@ -11,18 +26,35 @@
     padding: 0;
     list-style: none;
     display: flex;
-    column-gap: 1.3rem;
+    column-gap: 2rem;
 }
 
 .nav_item a{
     font-weight: 500;
     font-size: 1.1rem;
-    color: #3d5a80;
+    color: #fff;
     text-decoration: none;
     transition: .3s;
 }
 
-.nav_item a:hover{
-    color: #98c1d9;
+.nav_item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background-color: #F4B942;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    bottom: -0.2rem;
+    left: 0;
+    top: -1.5rem;
+    border-radius: 20px;
 }
 
+.nav_item a:hover{
+    color: #f4b942;
+}
+
+.nav_item a:hover::after {
+    width: 100%;
+}

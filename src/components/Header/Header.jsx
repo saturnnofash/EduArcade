@@ -27,7 +27,8 @@ const Header = () => {
     <Container>
       <div className ="navigation d-flex align-items-center justify-content-between">
         <div className="logo">
-          <h2 className="d-flex align-items-center"><i class="ri-copilot-fill"></i> LearnHub
+          <h2 className="d-flex align-items-center"><i class="ri-copilot-fill"></i>
+          LearnHub
           </h2>
         </div>
 
