@@ -1,0 +1,30 @@
+.single_subject_item{
+    padding: 15px;
+}
+
+.subject_img img{
+    border-radius: 10px;
+    margin-bottom: 20px;    
+}
+
+.enroll a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #ee6c4d;
+}
+
+.lesson, .students, .rating {
+    font-size: .9rem;
+    color: #3d5a80 ;
+    font-weight: 500;
+}
+
+.lesson i, .students i, .rating i{
+    font-weight: 400;
+}
+
+.subject_title{
+    line-height: 2rem;
+
+}

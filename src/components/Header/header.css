@@ -1,0 +1,28 @@
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.nav_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 1.3rem;
+}
+
+.nav_item a{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #3d5a80;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav_item a:hover{
+    color: #98c1d9;
+}
+
