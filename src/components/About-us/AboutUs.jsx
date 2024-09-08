@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import aboutImg from "../../assets/images/hero-img.PNG"
 
 export const AboutUs = () => {
-  return <section>
+  return <section className='aboutus_section'>
     <Container>
         <Row>
             <Col lg="6" md="6">

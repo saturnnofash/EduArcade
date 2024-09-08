@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 
@@ -10,25 +10,37 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 section,
-footer{
+footer {
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 2rem;
   line-height: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Oswald';
   color: #0a2b1e;
   font-weight: 600;
+  text-decoration: none;
 }
 
-p{
+p {
   color: #3d5a80;
   font-size: 1rem;
   line-height: 35px;
-  font-family: "Andada Pro", serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
 }
 

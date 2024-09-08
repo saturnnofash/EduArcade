@@ -1,3 +1,9 @@
-.group-row{
+.group_section {
+    background-color: #b8c1ec;
+    box-shadow: -9px 57px 46px -40px rgba(0, 0, 0, 0.71) inset;
+}
+
+.group-row {
     color: #3d5a80;
+
 }

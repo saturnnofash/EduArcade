@@ -1,28 +1,51 @@
-.hero_content h2{
+.hero_container {
+    background-color: #232946;
+    color: whitesmoke;
+}
+
+.hero_container p {
+    color: #b8c1ec;
+}
+
+.hero_container strong {
+    color: #F4B942;
+
+}
+
+.hero_img {
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.75);
+    border: solid 2px #121629;
+    width: 30vw;
+    justify-content: flex-end;
+}
+
+.hero_content h2 {
     font-weight: 600;
     line-height: 55px;
 }
 
-.hero_content{
-    padding-top: 80px;
-}
 
-.searchButton{
-    background: #293241;
-    color: #e0fbfc;
+.searchButton {
+    background: #eebbc3;
+    color: #232946;
     padding: 7px 15px;
     border-radius: 50px;
-    border: none; 
-    cursor: pointer; 
+    border: none;
+    cursor: pointer;
 }
 
-.search input{
+.search input {
     border: none;
     outline: none;
     padding: 7px 10%;
+    border-radius: 20px;
+    margin-right: 3%;
 }
 
-.search{
+.search {
     width: 50%;
     border: 1px solid #293241;
     display: flex;

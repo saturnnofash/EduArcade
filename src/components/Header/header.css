@@ -1,4 +1,3 @@
-
 /* 
 Added styles for a visually enhanced header with a background color and white text. 
 Increased the spacing between navigation items for better layout. 
@@ -7,21 +6,24 @@ which expands on hover. Also changed the hover color of the navigation links for
 --rainier
 */
 
+.ri-copilot-fill {
+    color: #F4B942;
+}
 
-.header{
+.header {
     width: 100%;
     height: 80px;
     line-height: 80px;
-    background-color: #A63E4A;
+    background-color: #232946;
     color: #fff;
 }
 
-.ri-copilot-fill{
+.ri-copilot-fill {
     color: #fff;
     padding: 0 1rem;
 }
 
-.nav_list{
+.nav_list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -29,7 +31,7 @@ which expands on hover. Also changed the hover color of the navigation links for
     column-gap: 2rem;
 }
 
-.nav_item a{
+.nav_item a {
     font-weight: 500;
     font-size: 1.1rem;
     color: #fff;
@@ -51,7 +53,7 @@ which expands on hover. Also changed the hover color of the navigation links for
     border-radius: 20px;
 }
 
-.nav_item a:hover{
+.nav_item a:hover {
     color: #f4b942;
 }
 

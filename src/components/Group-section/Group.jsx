@@ -3,9 +3,9 @@ import { Container, Row, Col } from 'reactstrap'
 import './group-section.css';
 
 export const Group = () => {
-  return <section>
+  return <section className='group_section'>
     <Container>
-    <Row>
+    <Row className='d-flex justify-content-center align-items-center'>
         <Col lg= "2" md= "3">
             <h3 className="group-row d-flex align-items-center gap-1"><i class="ri-facebook-circle-fill"></i>Adjing</h3>
         </Col>

@@ -1,4 +1,7 @@
-.about_content{
+.about_content {
     padding-left: 50px;
-    
+}
+
+.aboutus_section {
+    box-shadow: -9px 57px 46px -40px rgba(0, 0, 0, 0.71) inset;
 }
