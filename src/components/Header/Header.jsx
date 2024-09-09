@@ -1,57 +1,58 @@
-import React from 'react'
-import {Container} from "reactstrap";
+import React from 'react';
+import { Container } from "reactstrap";
+import { NavLink } from "react-router-dom"; // Import NavLink for routing
 import "./header.css";
 
 const navLinks = [
   {
     display: "Home",
-    url: "#"
+    url: "/"
   },
   {
     display: "About",
-    url: "#"
+    url: "/about"
   },
   {
     display: "Games",
-    url: "#"
+    url: "/game"
   },
   {
     display: "Subjects",
-    url: "#"
+    url: "/subjects"
   },
-]
+];
 
 const Header = () => {
+  return (
+    <header className="header">
+      <Container>
+        <div className="navigation d-flex align-items-center justify-content-between">
+          <div className="logo">
+            <h2 className="d-flex align-items-center">
+              <i className="ri-copilot-fill" style={{ color: '#F4B942' }}></i> LearnHub
+            </h2>
+          </div>
 
-  return <header className="header">
-    <Container>
-      <div className ="navigation d-flex align-items-center justify-content-between">
-        <div className="logo">
-          <h2 className="d-flex align-items-center"><i class="ri-copilot-fill" style={{ color: '#F4B942' }}></i>
-          LearnHub
-          </h2>
-        </div>
-
-        <div className="nav d-flex align-items-center gap-5">
-          <div className="nav_menu">
-            <ul className="nav_list">
-
-              {
-                //show nav_list using navLinks function created above
-                navLinks.map((item,index)=>(
-                  <li key= {index} className="nav_item">
-                    <a href={item.url}>{item.display}</a>
+          <div className="nav d-flex align-items-center gap-5">
+            <div className="nav_menu">
+              <ul className="nav_list">
+                {navLinks.map((item, index) => (
+                  <li key={index} className="nav_item">
+                    <NavLink
+                      to={item.url}
+                      className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                      {item.display}
+                    </NavLink>
                   </li>
-                ))
-              }
-              
-            </ul>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-
-      </div>
-    </Container>
-  </header>
+      </Container>
+    </header>
+  );
 };
 
 export default Header;
