@@ -1,16 +1,14 @@
-import React, {Fragment} from 'react';
-import { Container } from 'reactstrap';
+import React, { Fragment } from 'react';
 import Header from '../components/Header/Header';
-import GameCanvas from '../components/Game-canvas/GameCanvas';
+import Test from '../components/Game-canvas/test';
 
 
 const Game = () => {
   return (
-  <Fragment >
-      <Header/>
-      <GameCanvas/>
-    
-  </Fragment>
+    <Fragment >
+      <Header />
+      <Test />
+    </Fragment>
   );
 };
 
