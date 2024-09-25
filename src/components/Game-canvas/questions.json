@@ -1,0 +1,130 @@
+{
+  "easy_questions": [
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["H2O", "CO2", "O2", "NaCl"],
+      "answer": "H2O",
+      "points": 100
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "answer": "Mars",
+      "points": 100
+    },
+    {
+      "question": "What gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      "answer": "Carbon Dioxide",
+      "points": 100
+    },
+    {
+      "question": "How many bones are in the adult human body?",
+      "options": ["206", "150", "300", "250"],
+      "answer": "206",
+      "points": 100
+    },
+    {
+      "question": "What is the primary organ responsible for pumping blood in the human body?",
+      "options": ["Brain", "Lungs", "Heart", "Liver"],
+      "answer": "Heart",
+      "points": 100
+    }
+  ],
+  "medium_questions": [
+    {
+      "question": "What is the process by which plants make their food called?",
+      "options": ["Respiration", "Photosynthesis", "Fermentation", "Digestion"],
+      "answer": "Photosynthesis",
+      "points": 200
+    },
+    {
+      "question": "Which of the following is the largest organ in the human body?",
+      "options": ["Heart", "Liver", "Skin", "Lungs"],
+      "answer": "Skin",
+      "points": 200
+    },
+    {
+      "question": "What type of rock is formed from cooling magma?",
+      "options": ["Sedimentary", "Igneous", "Metamorphic", "Fossil"],
+      "answer": "Igneous",
+      "points": 200
+    },
+    {
+      "question": "What is the name of the force that keeps planets in orbit around the sun?",
+      "options": ["Magnetism", "Friction", "Gravity", "Centripetal Force"],
+      "answer": "Gravity",
+      "points": 200
+    },
+    {
+      "question": "Which element has the atomic number 1?",
+      "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+      "answer": "Hydrogen",
+      "points": 200
+    }
+  ],
+  "hard_questions": [
+    {
+      "question": "Which type of bond involves the sharing of electron pairs between atoms?",
+      "options": ["Ionic Bond", "Covalent Bond", "Hydrogen Bond", "Metallic Bond"],
+      "answer": "Covalent Bond",
+      "points": 300
+    },
+    {
+      "question": "What is the primary purpose of the cell membrane?",
+      "options": ["Energy production", "Protein synthesis", "Regulation of entry and exit of substances", "Genetic information storage"],
+      "answer": "Regulation of entry and exit of substances",
+      "points": 300
+    },
+    {
+      "question": "In which part of the cell does cellular respiration occur?",
+      "options": ["Nucleus", "Cytoplasm", "Mitochondria", "Ribosome"],
+      "answer": "Mitochondria",
+      "points": 300
+    },
+    {
+      "question": "What is the pH level of a neutral solution?",
+      "options": ["0", "7", "14", "10"],
+      "answer": "7",
+      "points": 300
+    },
+    {
+      "question": "Which scientist is known for the theory of evolution by natural selection?",
+      "options": ["Isaac Newton", "Albert Einstein", "Charles Darwin", "Louis Pasteur"],
+      "answer": "Charles Darwin",
+      "points": 300
+    }
+  ],
+  "very_hard_questions": [
+    {
+      "question": "What is the main difference between a prokaryotic and eukaryotic cell?",
+      "options": ["Size", "Presence of a nucleus", "Type of DNA", "Type of ribosomes"],
+      "answer": "Presence of a nucleus",
+      "points": 400
+    },
+    {
+      "question": "Which law states that the total energy in a closed system remains constant?",
+      "options": ["Newton's First Law", "Law of Conservation of Mass", "Law of Conservation of Energy", "Einstein's Theory of Relativity"],
+      "answer": "Law of Conservation of Energy",
+      "points": 400
+    },
+    {
+      "question": "What is the name of the phenomenon where light bends when it passes through different mediums?",
+      "options": ["Reflection", "Diffraction", "Refraction", "Dispersion"],
+      "answer": "Refraction",
+      "points": 400
+    },
+    {
+      "question": "What is the primary component of the Earth’s atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      "answer": "Nitrogen",
+      "points": 400
+    },
+    {
+      "question": "Which particle is considered the 'building block' of matter?",
+      "options": ["Atom", "Molecule", "Neutron", "Proton"],
+      "answer": "Atom",
+      "points": 400
+    }
+  ]
+}

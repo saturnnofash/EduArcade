@@ -1,14 +1,14 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/Header/Header';
-import Subject from '../components/Subject-section/Subject';
+import Test from '../components/Game-canvas/test';
 
 
 const Subjects = () => {
   return (
-  <Fragment>
-    <Header/>
-    <Subject/>
-  </Fragment>
+    <Fragment>
+      <Header />
+      <Test />
+    </Fragment>
   );
 };
 
