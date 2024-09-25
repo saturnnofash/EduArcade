@@ -3,6 +3,7 @@ Added styles for a visually enhanced header with a background color and white te
 Increased the spacing between navigation items for better layout. 
 Introduced a smooth, animated underline effect for navigation links using the ::after pseudo-element, 
 which expands on hover. Also changed the hover color of the navigation links for improved interaction feedback.
+Added a new class for the login link to always have the hover effect.
 --rainier
 */
 
@@ -58,5 +59,14 @@ which expands on hover. Also changed the hover color of the navigation links for
 }
 
 .nav_item a:hover::after {
+    width: 100%;
+}
+
+/* New styles for login link */
+.nav_item a.login-link {
+    color: #f4b942;
+}
+
+.nav_item a.login-link::after {
     width: 100%;
 }

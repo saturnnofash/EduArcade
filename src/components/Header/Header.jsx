@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from "reactstrap";
-import { NavLink } from "react-router-dom"; // Import NavLink for routing
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const navLinks = [
@@ -17,9 +17,9 @@ const navLinks = [
     url: "/game"
   },
   {
-    display: "Subjects",
-    url: "/subjects"
-  },
+    display: "Login",
+    url: "/login"
+  }
 ];
 
 const Header = () => {
@@ -40,7 +40,9 @@ const Header = () => {
                   <li key={index} className="nav_item">
                     <NavLink
                       to={item.url}
-                      className={({ isActive }) => (isActive ? "active" : "")}
+                      className={({ isActive }) => 
+                        `${isActive ? "active" : ""} ${item.display === "Login" ? "login-link" : ""}`
+                      }
                     >
                       {item.display}
                     </NavLink>
