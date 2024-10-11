@@ -7,6 +7,7 @@ import walkLeftSprite from './Game-Assets/toleft.png';
 import tilesetImage from './Game-Assets/Ground.png';
 import QuestionData from './questions.json';
 
+
 const GameCanvas = () => {
   const canvasRef = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 500 });
