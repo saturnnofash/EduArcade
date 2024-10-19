@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import Header from '../components/Header/Header';
-import Test from '../components/Game-canvas/test';
+import Minemind from '../components/Game-canvas/test';
+
 
 
 const Game = () => {
   return (
     <Fragment >
       <Header />
-      <Test />
+      <Minemind />
     </Fragment>
   );
 };

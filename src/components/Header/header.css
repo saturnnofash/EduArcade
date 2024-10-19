@@ -17,6 +17,7 @@ Added a new class for the login link to always have the hover effect.
     line-height: 80px;
     background-color: #232946;
     color: #fff;
+    z-index: 2;
 }
 
 .ri-copilot-fill {
