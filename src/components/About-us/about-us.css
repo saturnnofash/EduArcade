@@ -5,3 +5,12 @@
 .aboutus_section {
     box-shadow: -9px 57px 46px -40px rgba(0, 0, 0, 0.71) inset;
 }
+
+.about_image img {
+    max-width: 500px; /* Ensures the image does not exceed the container's width */
+    max-height: 500px; /* Limits the image's height */
+    object-fit: cover; /* Ensures the image retains a good aspect ratio */
+    width: auto; /* Maintains the natural width within the max-width limit */
+    height: auto; /* Maintains the natural height within the max-height limit */
+  }
+  

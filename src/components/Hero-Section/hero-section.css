@@ -26,31 +26,3 @@
     font-weight: 600;
     line-height: 55px;
 }
-
-
-.searchButton {
-    background: #eebbc3;
-    color: #232946;
-    padding: 7px 15px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-}
-
-.search input {
-    border: none;
-    outline: none;
-    padding: 7px 10%;
-    border-radius: 20px;
-    margin-right: 3%;
-}
-
-.search {
-    width: 50%;
-    border: 1px solid #293241;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 50px;
-    margin-top: 20px;
-}

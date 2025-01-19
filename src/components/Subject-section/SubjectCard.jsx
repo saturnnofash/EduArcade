@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubjectCard = (props) => {
 
-    const {imgUrl, title, lesson, students, rating,}= props.item
+    const {imgUrl, title, lesson, students, rating, url}= props.item
 
   return <div className="single_subject_item">
   <div className="subject_img">
@@ -17,12 +17,12 @@ const SubjectCard = (props) => {
       <div className="d-flex justify-content-between align-items-center">
           <p className="lesson d-flex align-items-center gap-1">
           <i class="ri-gamepad-line"></i>
-          {lesson} Games Available
+          {lesson} Game(s) Available
           </p>
 
           <p className="students d-flex align-items-center gap-1">
           <i class="ri-user-line"></i>
-          {students} Users Played
+          {students} User(s) Played
           </p>
       </div>
 
@@ -34,7 +34,7 @@ const SubjectCard = (props) => {
 
           <p className="enroll d-flex align-items-center gap-1">
           <i class="ri-user-line"></i>
-              <a href="#"> Play Now!</a>
+              <a href={url}> Play Now!</a>
           </p>
       </div>
   </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
-import subjectImg1 from "../../assets/images/hero-img.PNG";
-import subjectImg2 from "../../assets/images/hero-img.PNG";
+import subjectImg1 from "../../assets/images/earth-science-logo.png";
+import subjectImg2 from "../../assets/images/pre-cal-logo.png";
 import "./subjects.css";
 import SubjectCard from './SubjectCard';
 
@@ -9,18 +9,20 @@ const subjectData = [
     {
         id:"01",
         title: "Earth Science",
-        lesson: "4",
+        lesson: "1",
         students: "4",
         rating: "5",
-        imgUrl: subjectImg1
+        imgUrl: subjectImg1,
+        url: "/game1",
     },
     {
         id:"02",
         title: "Pre-Calculus",
-        lesson: "4",
+        lesson: "1",
         students: "21",
         rating: "4",
-        imgUrl: subjectImg2
+        imgUrl: subjectImg2,
+        url: "/game2"
     },
 ]
 

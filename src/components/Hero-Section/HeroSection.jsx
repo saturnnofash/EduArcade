@@ -14,11 +14,6 @@ export const HeroSection = () => {
               <p className="mb-4">
                 Dive into a world where learning meets fun. At LearnHub, we believe education doesn't have to be boring. Join us, and let's turn study time into playtime!
               </p>
-
-              <div className="search">
-                <input type="text" placeholder="Search" />
-                <button className="searchButton">Search</button>
-              </div>
             </div>
           </Col>
 

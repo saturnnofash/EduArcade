@@ -1,0 +1,401 @@
+@font-face {
+  font-family: Minecraft;
+  src: url(/public/fonts/Minecraft.ttf);
+}
+
+/* General styles */
+.minecraft-container {
+  min-height: 100vh;
+  background-image: url(/public/images/game-screen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Minecraft', sans-serif;
+}
+
+/* Main Menu Styles */
+.menu-container {
+  font-family: 'Minecraft', sans-serif;
+  padding: 2rem;
+  min-width: 600px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-title {
+  font-family: 'Minecraft', sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.menu-button {
+  font-family: 'Minecraft', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .5rem 0;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.start-button {
+  font-family: 'Minecraft', sans-serif;
+  background: #727272;
+  color: rgb(247,247,247);
+  width: 100%;
+  padding: .5rem 0;
+  margin-bottom: .75rem;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+  font-size: 1.35rem;
+  letter-spacing: .025em;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+      inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.menu-button:hover {
+  background: rgba(115, 107, 221, 1);
+}
+.menu-button:focus {
+  color: rgb(246,246,44);
+  outline: none;
+}
+
+.instructions-button {
+  font-family: 'Minecraft', sans-serif;
+  background: #727272;
+  color: rgb(247,247,247);
+  width: 100%;
+  padding: .5rem 0;
+  margin-bottom: .75rem;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+  font-size: 1.35rem;
+  letter-spacing: .025em;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+      inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.quit-button {
+  font-family: 'Minecraft', sans-serif;
+  background: #727272;
+  color: rgb(247,247,247);
+  width: 100%;
+  padding: .5rem 0;
+  margin-bottom: .75rem;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+  font-size: 1.35rem;
+  letter-spacing: .025em;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+      inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Instructions Page Styles */
+.instructions-bg-container {
+  font-family: 'Minecraft', sans-serif;
+  background-image: url(/public/images/instructions-bg.jpg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.instructions-container {
+  font-family: 'Minecraft', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 50%;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructions-title {
+  font-family: 'Minecraft', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+.instructions-list {
+  font-family: 'Minecraft', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.instructions-list li {
+  padding: 0.1rem 0;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.instructions-list li:before {
+  content: "→";
+  margin-right: 10px;
+  color: #ffd700;
+}
+
+/* Main Game Styles */
+.game-container {
+  position: relative;
+  background-image: url(/public/images/main-game-bg.jpg);
+  padding: 2rem;
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Minecraft', sans-serif;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-family: 'Minecraft', sans-serif;
+}
+
+.round-indicator {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.lives-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.score-display {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.question-container {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.question-text {
+  font-family: 'Minecraft', sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.answers-grid {
+  font-family: 'Minecraft', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.answer-button {
+  background-image: url(/public/images/trap-door.jpg);
+  color: white;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Sound Toggle Button */
+.sound-toggle {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #404040;
+}
+
+/* Game Over and Victory Screens */
+.game-over-button {
+  font-family: 'Minecraft', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: .5rem 0;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.game-over-button:hover {
+  background: rgba(115, 107, 221, 1);
+}
+.game-over-button:focus {
+  color: rgb(246,246,44);
+  outline: none;
+}
+
+.end-screen {
+  font-family: 'Minecraft', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(170, 0, 0, 0.5);
+  padding: 3rem;
+  text-align: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.end-title {
+  font-family: 'Minecraft', sans-serif;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #000000;
+  color: #ffffff;
+}
+
+.end-message {
+  font-family: 'Minecraft', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+
+.end-score {
+  font-family: 'Minecraft', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+
+.score-highlight {
+  color: #FFFF55;
+  font-weight: bold;
+}
+
+/* Victory screen specific styles */
+.end-screen-victory {
+  font-family: 'Minecraft', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/public/images/main-menu-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 3rem;
+  text-align: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.end-title-victory {
+  font-family: 'Minecraft', sans-serif;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #000000;
+  color: #FFAA00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .game-container {
+    min-width: 95vw;
+  }
+  
+  .answers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-container,
+  .instructions-container,
+  .end-screen {
+    min-width: 95vw;
+  }
+  
+  .end-screen {
+    min-width: 90vw;
+    padding: 2rem;
+  }
+  
+  .end-title {
+    font-size: 2.5rem;
+  }
+  
+  .end-score {
+    font-size: 1.2rem;
+  }
+}
